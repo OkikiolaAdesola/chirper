@@ -6,10 +6,10 @@
     <title>Laravel Calculator</title>
 </head>
 <body>
-    <h1>Laravel Calculator</h1>
+    <h1>About Us</h1>
 
     <div>
-        <a href="About">About Us</a>
+        <a href="/">Return Home</a>
         <a href="Contact">Contact</a>
     </div>
 
