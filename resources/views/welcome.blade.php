@@ -10,79 +10,83 @@
 <body>
     <div>
         <h1>Addition</h1>
-        <input type="number" id="num1">
-        <input type="number" id="num2">
+        <input type="number" id="AddNum1">
+        <input type="number" id="AddNum2">
 
-
-        <button onclick="add()">Add</button>
-        <p id="result"></p>
+        <button onclick="Addition()">Addition</button>
+        <p id="AddResult"></p>
 
         <script>
-            function add() {
-                let num1 = Number(document.getElementById("num1").value);
-                let num2 = Number(document.getElementById("num2").value);
-                let result = num1 + num2;
+            function Addition(){
+                let Num1 = Number(document.getElementById("AddNum1").value)
+                let Num2 = Number(document.getElementById("AddNum2").value)
+                let AddResult = Num1 + Num2
 
-                document.getElementById("result").textContent = result;
+                document.getElementById("AddResult").textContent = AddResult
+
             }
         </script>
     </div>
-
 
     <div>
         <h1>Subtraction</h1>
-        <input type="number" id="Num1">
-        <input type="number" id="Num2">
+        <input type="number" id="SubNum1">
+        <input type="number" id="SubNum2">
 
-        <button onclick="subtract()">Subtract</button>
-        <p id="subtract"></p>
+        <button onclick="Subtraction()">Subtract</button>
+        <p id="SubResult"></p>
 
         <script>
-            function subtract() {
-                let num1 = Number(document.getElementById("Num1").value);
-                let num2 = Number(document.getElementById("Num2").value);
-                let subtract = num1 - num2;
+            function Subtraction(){
+                let Num1 = Number(document.getElementById("SubNum1").value)
+                let Num2 = Number(document.getElementById("SubNum2").value)
+                let SubResult = Num1 - Num2
 
-                document.getElementById("subtract").textContent = subtract;
+                document.getElementById("SubResult").textContent = SubResult
+
             }
         </script>
     </div>
+
     <div>
         <h1>Multiplication</h1>
         <input type="number" id="MulNum1">
         <input type="number" id="MulNum2">
 
         <button onclick="Multiply()">Multiply</button>
-        <p id="multiply"></p>
+        <p id="MulResult"></p>
 
         <script>
-            function Multiply() {
-                let num1 = Number(document.getElementById("MulNum1").value);
-                let num2 = Number(document.getElementById("MulNum2").value);
-                let multiply = num1 * num2;
+            function Multiply(){
+                let Num1 = Number(document.getElementById("MulNum1").value)
+                let Num2 = Number(document.getElementById("MulNum2").value)
+                let MulResult = Num1 * Num2
 
-                document.getElementById("multiply").textContent = multiply;
+                document.getElementById("MulResult").textContent = MulResult
+
             }
         </script>
     </div>
+
     <div>
         <h1>Division</h1>
         <input type="number" id="DivNum1">
         <input type="number" id="DivNum2">
 
-        <button onclick="Divide()">Divide</button>
-        <p id="divide"></p>
+        <button onclick="Division()">Division</button>
+        <p id="DivResult"></p>
 
         <script>
-            function Divide() {
-                let num1 = Number(document.getElementById("DivNum1").value);
-                let num2 = Number(document.getElementById("DivNum2").value);
-                let divide = num1 / num2;
+            function Division(){
+                let Num1 = Number(document.getElementById("DivNum1").value)
+                let Num2 = Number(document.getElementById("DivNum2").value)
+                let DivResult = Num1 / Num2
 
-                document.getElementById("divide").textContent = divide;
+                document.getElementById("DivResult").textContent = DivResult
             }
         </script>
     </div>
+
 </body>
 
 </html>
