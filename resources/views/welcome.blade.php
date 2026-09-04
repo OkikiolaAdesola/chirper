@@ -25,7 +25,7 @@
     
     <p id="Results"></p>
 
-<input type="number" id="Num1">
+
 
 </body>
 
