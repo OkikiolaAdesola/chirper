@@ -4,28 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel Calculator</title>
+    <title>LaravelCalc</title>
     @vite('resources/js/app.js')
+    @vite('resources/css/app.css')
 </head>
 
 <body>
+    <div class="calculator">
+        <input class="display" readonly>
+        <div class="keys">
 
-    <input type="number" id="num1">
+            <button onclick="appendtodisplay('9')">9</button>
+            <button onclick="appendtodisplay('8')">8</button>
+            <button onclick="appendtodisplay('7')">7</button>
+            <button class="operators" onclick="appendtodisplay('+')">+</button> <br>
 
-    <select id="Operations">
-        <option value="Addition">+</option>
-        <option value="Subtraction">-</option>
-        <option value="Division">÷</option>
-        <option value="Multipication">*</option>
-    </select>
+            <button onclick="appendtodisplay('6')">6</button>
+            <button onclick="appendtodisplay('5')">5</button>
+            <button onclick="appendtodisplay('4')">4</button>
+            <button class="operators" onclick="appendtodisplay('-')">-</button> <br>
 
-    <input type="number" id="num2">
+            <button onclick="appendtodisplay('3')">3</button>
+            <button onclick="appendtodisplay('2')">2</button>
+            <button onclick="appendtodisplay('1')">1</button>
+            <button class="operators" onclick="appendtodisplay('*')">*</button> <br>
 
-    <button type="submit" id="calbutton">Calculate</button>
-    
-    <p id="Results"></p>
+            <button onclick="appendtodisplay('0')">0</button>
+            <button class="operators" onclick="calculate()">=</button>
+            <button class="operators" onclick="clear()">C</button>
+            <button class="operators" onclick="appendtodisplay('÷')">÷</button>
 
-
+        </div>
+    </div>
 </body>
 
 </html>
