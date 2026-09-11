@@ -1,5 +1,5 @@
 * {
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     max-width: 475px;
     margin: auto;
 }
@@ -8,6 +8,10 @@
     margin-top: 50px;
     border-style: double;
     background-color: aqua;
+}
+
+body{
+    background-color: bisque;
 }
 
 
@@ -36,6 +40,8 @@ button {
     width: 450px;
     height: 100px;
     border-style: double;
+    background-color: beige;
+    border-radius: 5%;
 }
 
 .operators {
