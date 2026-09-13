@@ -1,48 +1,22 @@
-//
 
+const display = document.getElementById("display");
 
-document
-    .getElementById("calbutton")
-    .addEventListener('click', function () {
-
-        let Operation = document.getElementById("Operations").value
-
-        if (Operation === 'Addition') {
-            Add();
-        } else if (Operation == 'Subtraction') {
-            Sub();
-        } else if (Operation == 'Multipication') {
-            Mul();
-        } else if (Operation == 'Division') {
-            Div();
-        }
-    })
-
-
-function Add() {
-    let Num1 = Number(document.getElementById("num1").value)
-    let Num2 = Number(document.getElementById("num2").value)
-
-    document.getElementById('Results').textContent = Num1 + Num2
+function appendtodisplay(input){
+    display.value += input;
 }
 
-function Sub() {
-    let Num1 = Number(document.getElementById("num1").value)
-    let Num2 = Number(document.getElementById("num2").value)
-
-    document.getElementById('Results').textContent = Num1 - Num2
+function clearDisplay(){
+    display.value = "";
 }
 
-function Mul() {
-    let Num1 = Number(document.getElementById("num1").value)
-    let Num2 = Number(document.getElementById("num2").value)
-
-    document.getElementById('Results').textContent = Num1 * Num2
+function calculate(){
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Error";
+    }
 }
 
-function Div() {
-    let Num1 = Number(document.getElementById("num1").value)
-    let Num2 = Number(document.getElementById("num2").value)
-
-    document.getElementById('Results').textContent = Num1 / Num2
-}
+window.appendtodisplay = appendtodisplay;
+window.clearDisplay = clearDisplay;
+window.calculate = calculate;
