@@ -11,7 +11,7 @@
 
 <body>
     <div class="calculator">
-        <input class="display" readonly>
+        <input id="display" readonly>
         <div class="keys">
 
             <button onclick="appendtodisplay('9')">9</button>
@@ -30,10 +30,11 @@
             <button class="operators" onclick="appendtodisplay('*')">*</button> <br>
 
             <button onclick="appendtodisplay('0')">0</button>
-            <button class="operators" onclick="calculate()">=</button>
-            <button class="operators" onclick="clear()">C</button>
+            <button onclick="appendtodisplay('.')">.</button>
             <button class="operators" onclick="appendtodisplay('÷')">÷</button>
-
+            <button class="operators" onclick="calculate()">=</button>
+            <button class="operators" onclick="clearDisplay()">C</button>
+            
         </div>
     </div>
 </body>
